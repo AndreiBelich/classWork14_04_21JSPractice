@@ -81,7 +81,7 @@ class Student{
 
   showInformation(){
     console.log(`Info about student: Name:${this.name}, surname: ${this.surname},`+
-    ` gender:${this.isMale ? "man" : "woman"}, contacts: ${this.contacts} ${this.info ? this.info : "data about info not specified!"}`);
+    ` gender:${this.isMale ? "man" : "woman"}, contacts: ${this.contacts} ${this._info ? this._info : "data about info not specified!"}`);
   }
 }
 
