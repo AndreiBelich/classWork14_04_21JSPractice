@@ -109,6 +109,10 @@ class Faculty{
     this._department = newValue;
   }
 
+  toString(){
+    return `faculty: ${this.faculty} department: ${this.department}`;
+  }
+
   _validateType(value, type){
     if(typeof(value) !== type){
       throw new TypeError();
