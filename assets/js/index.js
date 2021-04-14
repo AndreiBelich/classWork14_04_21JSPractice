@@ -176,12 +176,14 @@ arr.forEach((item, index) => {
 
 console.log("Подсчитать количество нулевых элементов");
 
-const numberCounter = (findNumber) => arr.reduce((acc, nextValue) => {
+const numberCounter = (findNumber, arr) => arr.reduce((acc, nextValue) => {
   nextValue === findNumber ? acc++ : acc;
   return acc;
 }, 0);
-const zeroCounter = numberCounter(0);
+const zeroCounter = numberCounter(0, arr);
 console.log(zeroCounter);
+/*const test = [1, 1, 1, 1, 1, 1, 23, 4, ,5 , 1, 22, 2, 2];
+console.log(numberCounter(1, test));*/
 
 /*4 Создать классы:
 - Книга (автор, название, год издания, издательство)
