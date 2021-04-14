@@ -75,7 +75,7 @@ class Student{
     if(!(info instanceof Faculty)){
       throw new TypeError();
     }
-    this.info = info;
+    this._info = info;
   }
 
   showInformation(){
