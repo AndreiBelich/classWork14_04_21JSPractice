@@ -27,6 +27,7 @@ class Student{
     this.surname = surname;
     this.isMale = isMale;
     this.contacts = contacts;
+    this.info = null;
   }
 
   get name(){
